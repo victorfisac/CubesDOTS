@@ -41,7 +41,7 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       intensity: 1
       radius: 0.3
@@ -57,7 +57,7 @@ MonoBehaviour:
         blendType: 0
         reflectionQuality: 2
         maxDistance: 71
-        iterationCount: 185
+        iterationCount: 70
         stepSize: 3
         widthModifier: 0.5
         reflectionBlur: 1
