@@ -52,13 +52,11 @@ namespace CubesECS.Pro
         private AudioSource m_audioSource;
         [SerializeField]
         private AudioClip[] m_audioClips;
-        [SerializeField, Range(0f, 5f)]
-        private float m_beatThreshold;
-        [SerializeField, Range(0f, 10f)]
+        [SerializeField]
         private float m_waveScale;
-        [SerializeField, Range(0f, 50f)]
+        [SerializeField]
         private float m_musicWaveIntensity;
-        [SerializeField, Range(0f, 10f)]
+        [SerializeField]
         private float m_calmDuration;
 
         [Header("UI")]
@@ -82,7 +80,7 @@ namespace CubesECS.Pro
         private int m_currentClip;
 
         private const int SAMPLE_SIZE = 1024;
-        private const string COUNT_FORMAT = "OBJECTS COUNT: {0}";
+        private const string COUNT_FORMAT = "ENTITIES: {0}";
         #endregion
 
 
@@ -116,10 +114,8 @@ namespace CubesECS.Pro
             for (int i = 0; i < SAMPLE_SIZE; i++)
                 _wave += m_samples[i]*m_samples[i];
 
-            m_waveValue = Mathf.Sqrt(_wave/SAMPLE_SIZE)*m_waveScale;
-
-            if (m_waveValue < m_beatThreshold)
-                m_waveValue = Mathf.Lerp(m_waveValue, 0f, Time.deltaTime*m_calmDuration);
+            float _newValue = Mathf.Sqrt(_wave/SAMPLE_SIZE)*m_waveScale;
+            m_waveValue = Mathf.Lerp(m_waveValue, _newValue, Time.deltaTime*m_calmDuration);
         }
 
         private void AddPawns(int count)

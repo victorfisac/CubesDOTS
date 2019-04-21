@@ -921,6 +921,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d283d2480498c6c4698ef3faf209be44, type: 3}
   - {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
   - {fileID: 8300000, guid: 7db11c2015f8b684daab83a3bdfcae61, type: 3}
+  - {fileID: 8300000, guid: 16503bac934ad134c8b84f083d518946, type: 3}
   m_beatThreshold: 4
   m_waveScale: 1.8
   m_musicWaveIntensity: 25

@@ -150,7 +150,7 @@ ReflectionProbe:
   m_Mode: 1
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
-  m_Resolution: 64
+  m_Resolution: 128
   m_UpdateFrequency: 0
   m_BoxSize: {x: 215.75708, y: 33.55542, z: 218.63528}
   m_BoxOffset: {x: -2.1572266, y: 0.5352478, z: -43.910843}
@@ -158,7 +158,7 @@ ReflectionProbe:
   m_FarClip: 1000
   m_ShadowDistance: 100
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -469,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &799626794
 RectTransform:
   m_ObjectHideFlags: 0
@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 1710314008}
   - component: {fileID: 1710314010}
   - component: {fileID: 1710314009}
+  - component: {fileID: 1710314011}
   m_Layer: 5
   m_Name: TXT_ObjectsCount
   m_TagString: Untagged
@@ -882,7 +883,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'OBJECTS COUNT: 0'
+  m_Text: 
 --- !u!222 &1710314010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -891,6 +892,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710314007}
   m_CullTransparentMesh: 0
+--- !u!114 &1710314011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710314007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2046141611
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,8 +950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9430752c15a1b8e438615a34082f182d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pawnCount: 100000
-  m_pawnIncrement: 100
+  m_pawnCount: 9500
+  m_pawnIncrement: 500
   m_autoIncrementSeconds: 4
   m_pawnPrefab: {fileID: 3973192694281900867, guid: ed25009a4ef7aa74a92ce82050e74e72,
     type: 3}
@@ -944,7 +960,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 31e72b385772fcf4c8ca6b5d882e5d3b, type: 2}
   - {fileID: 2100000, guid: 32a1fb13190944342b0b9d5ec767b7e1, type: 2}
   m_pawnSpeed: {x: 5, y: 10}
-  m_pawnScale: {x: 0.3, y: 1}
+  m_pawnScale: {x: 0.15, y: 0.6}
   m_topBound: -20
   m_bottomBound: 70
   m_leftBound: -50
@@ -955,10 +971,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d283d2480498c6c4698ef3faf209be44, type: 3}
   - {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
   - {fileID: 8300000, guid: 7db11c2015f8b684daab83a3bdfcae61, type: 3}
-  m_beatThreshold: 4
-  m_waveScale: 1.8
-  m_musicWaveIntensity: 25
-  m_calmDuration: 3
+  - {fileID: 8300000, guid: 16503bac934ad134c8b84f083d518946, type: 3}
+  m_waveScale: 2.3
+  m_musicWaveIntensity: 30
+  m_calmDuration: 70
   m_objectsCountTxt: {fileID: 1710314009}
   m_reflections: {fileID: 60911323}
   m_effects: {fileID: 963194229}
