@@ -165,24 +165,26 @@ namespace CubesECS.Pro
         #if UNITY_ANDROID || UNITY_IOS
         private void CheckInputs()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                if (Input.GetTouch(0).position.x > 0.5f)
+                    AddPawns(m_pawnIncrement);
+                else
+                    NextSong();
+            }
+            else if (Input.touchCount == 2 && Input.GetTouch(1).phase == TouchPhase.Ended)
             {
                 if (!m_effects.enabled)
                 {
                     QualitySettings.SetQualityLevel(5);
                     m_effects.enabled = true;
-                    m_reflections.enabled = true;
                 }
                 else
                 {
                     QualitySettings.SetQualityLevel(0);
                     m_effects.enabled = false;
-                    m_reflections.enabled = false;
                 }
             }
-
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-                NextSong();
         }
         #else
         private void CheckInputs()
@@ -222,7 +224,7 @@ namespace CubesECS.Pro
             m_manager.SetComponentData(pEntity, new Rotation { Value = new quaternion(rot.x, rot.y, rot.z, rot.w) });
             m_manager.SetComponentData(pEntity, new NonUniformScale { Value = new float3(scale.x, scale.y, scale.z) });
             m_manager.SetComponentData(pEntity, new MoveSpeed { Value = UnityEngine.Random.Range(m_pawnSpeed.x, m_pawnSpeed.y) });
-            m_manager.SetComponentData(pEntity, new WaveJump { Enabled = ((pIndex % 2) == 0), ScaleY = scale.y });
+            m_manager.SetComponentData(pEntity, new WaveJump { Enabled = ((pIndex % 2) == 0), ScaleY = scale.y, Scale = UnityEngine.Random.Range(0.5f, 1f) });
             
             RenderMesh _renderMesh = m_manager.GetSharedComponentData<RenderMesh>(pEntity);
             _renderMesh.material = m_materials[UnityEngine.Random.Range(0, m_materials.Length)];

@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &60568981
 RectTransform:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'OBJECTS COUNT: 0'
+  m_Text: 
 --- !u!222 &1710314010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -922,10 +922,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
   - {fileID: 8300000, guid: 7db11c2015f8b684daab83a3bdfcae61, type: 3}
   - {fileID: 8300000, guid: 16503bac934ad134c8b84f083d518946, type: 3}
-  m_beatThreshold: 4
   m_waveScale: 1.8
-  m_musicWaveIntensity: 25
-  m_calmDuration: 3
+  m_musicWaveIntensity: 30
+  m_calmDuration: 70
   m_objectsCountTxt: {fileID: 1710314009}
   m_reflections: {fileID: 0}
   m_effects: {fileID: 963194229}

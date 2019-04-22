@@ -10,6 +10,7 @@ namespace CubesECS.Pro
     {
         public bool Enabled;
         public float ScaleY;
+        public float Scale;
     }
 
     public class WaveJumpComponent : ComponentDataProxy<WaveJump>

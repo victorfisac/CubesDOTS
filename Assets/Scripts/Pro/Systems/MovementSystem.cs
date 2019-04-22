@@ -31,11 +31,11 @@ namespace CubesECS.Pro
 
                 if (wave.Enabled)
                 {
-                    _position.y = scale.Value.y/2 + m_waveAmount;
+                    _position.y = scale.Value.y/2 + m_waveAmount*wave.Scale;
                     _position.y = Mathf.Lerp(position.Value.y, _position.y, m_deltaTime*m_waveIntensity);
 
                     float3 _scale = scale.Value;
-                    _scale.y = wave.ScaleY + _position.y/2.5f*m_waveAmount;
+                    _scale.y = wave.ScaleY + _position.y/2.5f*m_waveAmount*wave.Scale;
                     scale.Value = _scale;
                 }
 

@@ -598,7 +598,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &963194228
@@ -703,7 +703,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a910be6e2f3396c41abb0a58f98b5294, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -950,9 +950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9430752c15a1b8e438615a34082f182d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_pawnCount: 9500
-  m_pawnIncrement: 500
-  m_autoIncrementSeconds: 4
+  m_pawnCount: 98000
+  m_pawnIncrement: 2000
+  m_autoIncrementSeconds: 3.5
   m_pawnPrefab: {fileID: 3973192694281900867, guid: ed25009a4ef7aa74a92ce82050e74e72,
     type: 3}
   m_materials:
@@ -960,21 +960,17 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 31e72b385772fcf4c8ca6b5d882e5d3b, type: 2}
   - {fileID: 2100000, guid: 32a1fb13190944342b0b9d5ec767b7e1, type: 2}
   m_pawnSpeed: {x: 5, y: 10}
-  m_pawnScale: {x: 0.15, y: 0.6}
+  m_pawnScale: {x: 0.2, y: 1}
   m_topBound: -20
   m_bottomBound: 70
   m_leftBound: -50
   m_rightBound: 50
   m_audioSource: {fileID: 1691267538}
   m_audioClips:
-  - {fileID: 8300000, guid: a910be6e2f3396c41abb0a58f98b5294, type: 3}
-  - {fileID: 8300000, guid: d283d2480498c6c4698ef3faf209be44, type: 3}
   - {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
-  - {fileID: 8300000, guid: 7db11c2015f8b684daab83a3bdfcae61, type: 3}
-  - {fileID: 8300000, guid: 16503bac934ad134c8b84f083d518946, type: 3}
-  m_waveScale: 2.3
+  m_waveScale: 2.25
   m_musicWaveIntensity: 30
-  m_calmDuration: 70
+  m_calmDuration: 30
   m_objectsCountTxt: {fileID: 1710314009}
   m_reflections: {fileID: 60911323}
   m_effects: {fileID: 963194229}
