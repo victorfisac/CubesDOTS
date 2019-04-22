@@ -224,7 +224,7 @@ namespace CubesECS.Pro
             m_manager.SetComponentData(pEntity, new Rotation { Value = new quaternion(rot.x, rot.y, rot.z, rot.w) });
             m_manager.SetComponentData(pEntity, new NonUniformScale { Value = new float3(scale.x, scale.y, scale.z) });
             m_manager.SetComponentData(pEntity, new MoveSpeed { Value = UnityEngine.Random.Range(m_pawnSpeed.x, m_pawnSpeed.y) });
-            m_manager.SetComponentData(pEntity, new WaveJump { Enabled = ((pIndex % 2) == 0), ScaleY = scale.y, Scale = UnityEngine.Random.Range(0.5f, 1f) });
+            m_manager.SetComponentData(pEntity, new WaveJump { Enabled = ((pIndex % 3) == 0), ScaleY = scale.y, Scale = UnityEngine.Random.Range(0.5f, 1f) });
             
             RenderMesh _renderMesh = m_manager.GetSharedComponentData<RenderMesh>(pEntity);
             _renderMesh.material = m_materials[UnityEngine.Random.Range(0, m_materials.Length)];
