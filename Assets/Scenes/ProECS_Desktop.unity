@@ -958,7 +958,6 @@ MonoBehaviour:
   m_materials:
   - {fileID: 2100000, guid: ddf8a877155356944a82e08d467a5d2c, type: 2}
   - {fileID: 2100000, guid: 31e72b385772fcf4c8ca6b5d882e5d3b, type: 2}
-  - {fileID: 2100000, guid: 32a1fb13190944342b0b9d5ec767b7e1, type: 2}
   m_pawnSpeed: {x: 5, y: 10}
   m_pawnScale: {x: 0.2, y: 1}
   m_topBound: -20

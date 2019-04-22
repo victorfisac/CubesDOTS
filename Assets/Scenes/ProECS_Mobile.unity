@@ -669,7 +669,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a910be6e2f3396c41abb0a58f98b5294, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -901,14 +901,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_pawnCount: 100000
-  m_pawnIncrement: 100
+  m_pawnIncrement: 1000
   m_autoIncrementSeconds: 4
   m_pawnPrefab: {fileID: 3973192694281900867, guid: ed25009a4ef7aa74a92ce82050e74e72,
     type: 3}
   m_materials:
   - {fileID: 2100000, guid: 8180fbb80e3dd1c4ca807ad8ac73b7a2, type: 2}
   - {fileID: 2100000, guid: 7a000327f6297b14393c25761a04f917, type: 2}
-  - {fileID: 2100000, guid: 6d47eb8e72d55b9468de309fe10557b3, type: 2}
   m_pawnSpeed: {x: 5, y: 10}
   m_pawnScale: {x: 0.3, y: 1}
   m_topBound: -20
@@ -917,11 +916,7 @@ MonoBehaviour:
   m_rightBound: 50
   m_audioSource: {fileID: 1691267538}
   m_audioClips:
-  - {fileID: 8300000, guid: a910be6e2f3396c41abb0a58f98b5294, type: 3}
-  - {fileID: 8300000, guid: d283d2480498c6c4698ef3faf209be44, type: 3}
   - {fileID: 8300000, guid: 0b114faef0212194c9b92d9479798867, type: 3}
-  - {fileID: 8300000, guid: 7db11c2015f8b684daab83a3bdfcae61, type: 3}
-  - {fileID: 8300000, guid: 16503bac934ad134c8b84f083d518946, type: 3}
   m_waveScale: 1.8
   m_musicWaveIntensity: 30
   m_calmDuration: 70
