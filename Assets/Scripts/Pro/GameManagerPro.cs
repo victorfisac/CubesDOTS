@@ -62,6 +62,8 @@ namespace CubesECS.Pro
         [Header("UI")]
         [SerializeField]
         private Text m_objectsCountTxt;
+        [SerializeField]
+        private Text m_fpsTxt;
 
         [Header("FX")]
         [SerializeField]
@@ -78,9 +80,11 @@ namespace CubesECS.Pro
         private float m_timeCounter;
         private int m_instancesCount;
         private int m_currentClip;
+        private float m_fpsCounter;
 
         private const int SAMPLE_SIZE = 1024;
         private const string COUNT_FORMAT = "ENTITIES: {0}";
+        private const string FPS_FORMAT = "FPS: {0}";
         #endregion
 
 
@@ -94,6 +98,7 @@ namespace CubesECS.Pro
         {
             m_samples = new float[SAMPLE_SIZE];
             m_manager = World.Active.EntityManager;
+            InvokeRepeating("UpdateFPS", 1f, 1f);
         }
 
         private void Update()
@@ -106,6 +111,12 @@ namespace CubesECS.Pro
 
 
         #region Private Fields
+        private void UpdateFPS()
+        {
+            m_fpsCounter = 1f/Time.deltaTime;
+            m_fpsTxt.text = string.Format(FPS_FORMAT, m_fpsCounter.ToString("00"));
+        }
+
         private void UpdateAudioData()
         {
             m_audioSource.GetOutputData(m_samples, 0);
@@ -174,17 +185,14 @@ namespace CubesECS.Pro
             }
             else if (Input.touchCount == 2 && Input.GetTouch(1).phase == TouchPhase.Ended)
             {
-                if (!m_effects.enabled)
-                {
+                if (QualitySettings.GetQualityLevel() != 5)
                     QualitySettings.SetQualityLevel(5);
-                    m_effects.enabled = true;
-                }
-                else
-                {
+                else if (QualitySettings.GetQualityLevel() != 0)
                     QualitySettings.SetQualityLevel(0);
-                    m_effects.enabled = false;
-                }
             }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+                Application.Quit();
         }
         #else
         private void CheckInputs()
@@ -203,7 +211,9 @@ namespace CubesECS.Pro
             if (Input.GetKeyDown(KeyCode.F3))
             {
                 m_effects.enabled = !m_effects.enabled;
-                m_reflections.enabled = !m_reflections.enabled;
+
+                if (m_reflections != null)
+                    m_reflections.enabled = !m_reflections.enabled;
             }
         }
         #endif
