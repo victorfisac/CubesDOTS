@@ -383,7 +383,7 @@ PlayerSettings:
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 150000000b000000
-    m_Automatic: 0
+    m_Automatic: 1
   - m_BuildTarget: iOSSupport
     m_APIs: 10000000
     m_Automatic: 1
@@ -657,7 +657,7 @@ PlayerSettings:
     Standalone: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel:
-    Android: 2
+    Android: 3
     Standalone: 3
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
