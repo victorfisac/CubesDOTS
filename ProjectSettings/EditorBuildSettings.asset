@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ProECS_Mobile.unity
-    guid: e80309a7f00a0ae4280eaf24dff71a96
+    path: Assets/Scenes/ProECS_Desktop.unity
+    guid: 976e93b3557e97249b9d5bce3155ab20
   m_configObjects: {}
