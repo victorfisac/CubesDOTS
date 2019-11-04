@@ -69,7 +69,7 @@ namespace CubesECS.Systems
                 });
 
                 m_buffer.AddComponent(pIndex, _instance, new Movement {
-                    bouncing = m_random.NextInt(0, 2),
+                    bouncing = m_random.NextInt(0, 3),
                     speed = m_random.NextFloat(MIN_SPEED, MAX_SPEED),
                     jumpForce = m_random.NextFloat(MIN_FORCE, MAX_FORCE)
                 });

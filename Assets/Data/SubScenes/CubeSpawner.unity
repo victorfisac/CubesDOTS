@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_prefab: {fileID: 3973192694281900867, guid: c7ffc261e0eb64e4cbb77967a37c22da,
     type: 3}
-  m_frequency: 0.005
+  m_frequency: 0.05
   m_maxDistance: 15
 --- !u!4 &549557432
 Transform:
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_prefab: {fileID: 3973192694281900867, guid: 690a6894c17871d4bb0311fdc9244045,
     type: 3}
-  m_frequency: 0.005
+  m_frequency: 0.01
   m_maxDistance: 15
 --- !u!4 &1407755355
 Transform:

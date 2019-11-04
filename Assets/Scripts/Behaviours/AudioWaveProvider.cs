@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.Collections;
+using Unity.Entities;
+using UnityEngine;
 
 
 namespace CubesECS.Behaviours
