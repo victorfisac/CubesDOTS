@@ -5,10 +5,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
-using Unity.Rendering;
-using UnityEngine;
 using Random = Unity.Mathematics.Random;
-using CubesECS.Behaviours;
 
 namespace CubesECS.Systems
 {
