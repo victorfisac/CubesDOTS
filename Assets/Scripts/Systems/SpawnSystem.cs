@@ -59,7 +59,7 @@ namespace CubesECS.Systems
                     Value = pLocalWorld.Position + new float3(m_random.NextFloat()*pSpawner.distance, 0f, 0f)
                 });
 
-                m_buffer.AddComponent(pIndex, _instance, new NonUniformScale {
+                m_buffer.SetComponent(pIndex, _instance, new NonUniformScale {
                     Value = new float3(m_random.NextFloat(MIN_SCALE, MAX_SCALE),
                         m_random.NextFloat(MIN_SCALE, MAX_SCALE),
                         m_random.NextFloat(MIN_SCALE, MAX_SCALE))
