@@ -1,4 +1,4 @@
-﻿using CubesECS.Components;
+﻿using CubesDOTS.Components;
 using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
@@ -7,7 +7,7 @@ using Unity.Mathematics;
 using Unity.Transforms;
 using Random = Unity.Mathematics.Random;
 
-namespace CubesECS.Systems
+namespace CubesDOTS.Systems
 {
     public class SpawnSystem : JobComponentSystem
     {

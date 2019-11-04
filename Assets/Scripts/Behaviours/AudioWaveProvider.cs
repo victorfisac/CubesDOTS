@@ -3,7 +3,7 @@ using Unity.Entities;
 using UnityEngine;
 
 
-namespace CubesECS.Behaviours
+namespace CubesDOTS.Behaviours
 {
     public interface IAudioWaveProvider
     {

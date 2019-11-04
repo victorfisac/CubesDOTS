@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 
 
-namespace CubesECS.Components
+namespace CubesDOTS.Components
 {
     public struct SpawnData : IComponentData
     {

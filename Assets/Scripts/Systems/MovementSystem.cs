@@ -3,11 +3,11 @@ using Unity.Transforms;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Burst;
-using CubesECS.Components;
-using CubesECS.Behaviours;
+using CubesDOTS.Components;
+using CubesDOTS.Behaviours;
 using Unity.Mathematics;
 
-namespace CubesECS.Systems
+namespace CubesDOTS.Systems
 {
     public class MovementSystem : JobComponentSystem
     {   

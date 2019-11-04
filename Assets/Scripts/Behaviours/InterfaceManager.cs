@@ -5,7 +5,7 @@ using Unity.Entities;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CubesECS.Behaviours
+namespace CubesDOTS.Behaviours
 {
     public class InterfaceManager : MonoBehaviour
     {

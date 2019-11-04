@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
-using CubesECS.Components;
+using CubesDOTS.Components;
 
 
-namespace CubesECS.Authoring
+namespace CubesDOTS.Authoring
 {
     public class SpawnerAuthoring : MonoBehaviour, IDeclareReferencedPrefabs, IConvertGameObjectToEntity
     {
