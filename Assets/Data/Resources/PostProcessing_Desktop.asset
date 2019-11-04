@@ -28,7 +28,7 @@ MonoBehaviour:
   fog:
     m_Enabled: 1
     m_Settings:
-      excludeSkybox: 1
+      excludeSkybox: 0
   antialiasing:
     m_Enabled: 1
     m_Settings:
@@ -55,26 +55,26 @@ MonoBehaviour:
     m_Settings:
       reflection:
         blendType: 0
-        reflectionQuality: 2
-        maxDistance: 71
-        iterationCount: 20
-        stepSize: 3
-        widthModifier: 0.5
-        reflectionBlur: 1
+        reflectionQuality: 0
+        maxDistance: 50
+        iterationCount: 25
+        stepSize: 2
+        widthModifier: 1
+        reflectionBlur: 1.25
         reflectBackfaces: 0
       intensity:
-        reflectionMultiplier: 1
+        reflectionMultiplier: 1.25
         fadeDistance: 100
         fresnelFade: 1
-        fresnelFadePower: 1.32
+        fresnelFadePower: 1.25
       screenEdgeMask:
         intensity: 0.02
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 1.1
-      aperture: 5.6
-      focalLength: 50
+      focusDistance: 2.26
+      aperture: 2.2
+      focalLength: 33
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
@@ -89,7 +89,7 @@ MonoBehaviour:
       lowPercent: 45
       highPercent: 95
       minLuminance: -5
-      maxLuminance: 1
+      maxLuminance: 0.25
       keyValue: 0.25
       dynamicKeyValue: 1
       adaptationType: 0
@@ -101,11 +101,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.425
-        threshold: 1.1
+        intensity: 0.2
+        threshold: 0.95
         softKnee: 0.5
-        radius: 2
-        antiFlicker: 0
+        radius: 2.5
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3
@@ -322,10 +322,10 @@ MonoBehaviour:
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
-      center: {x: 0.5, y: 0.5}
-      intensity: 0.45
-      smoothness: 0.2
-      roundness: 1
+      center: {x: 0.5, y: 0.41}
+      intensity: 0.382
+      smoothness: 0.867
+      roundness: 0.963
       mask: {fileID: 0}
       opacity: 1
       rounded: 0

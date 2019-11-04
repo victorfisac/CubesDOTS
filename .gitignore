@@ -36,3 +36,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/StreamingAssets/
+Assets/StreamingAssets.meta
+Assets/EntityCache/
+Assets/EntityCache.meta
