@@ -17,8 +17,7 @@ namespace CubesECS.Systems
 
 
         #region Structs
-        [BurstCompile]
-        private struct SpawnJob : IJobForEachWithEntity<SpawnData, LocalToWorld>
+        public struct SpawnJob : IJobForEachWithEntity<SpawnData, LocalToWorld>
         {
             #region Private Fields
             private EntityCommandBuffer.Concurrent m_buffer;

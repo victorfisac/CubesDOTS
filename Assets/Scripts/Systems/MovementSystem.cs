@@ -13,7 +13,7 @@ namespace CubesECS.Systems
     {   
         #region Structs
         [BurstCompile]
-        private struct MovementJob : IJobForEach<Translation, Movement>
+        public struct MovementJob : IJobForEach<Translation, Movement>
         {
             public float deltaTime;
             public float heightFactor;
