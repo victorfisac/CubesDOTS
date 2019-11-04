@@ -30,6 +30,11 @@ namespace CubesECS.Behaviours
 
 
         #region Main Methods
+        private void Awake()
+        {
+            Application.targetFrameRate = 0;
+        }
+
         private void Start()
         {
             m_manager = World.Active.EntityManager;
